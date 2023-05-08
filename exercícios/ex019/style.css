@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(218, 241, 218);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: darkgreen;
+}
+
+/* Criando id - # para personalizar uma tag (o nome da tag (h1) é opcional) */
+h1#principal{
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    color: rgb(29, 88, 29);
+}
+
+.basico{
+    color: rgb(29, 88, 29);
+}
+
+.intermediario{
+    color: rgb(233, 233, 100);
+}
+
+.avancado{
+    color: rgb(230, 130, 130);
+}
+
+.destaque{
+    background-color: bisque;
+}

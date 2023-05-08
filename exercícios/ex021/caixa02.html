@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: rgb(88, 46, 128);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        nav{
+            background-color: rgb(50, 14, 85);
+            padding: 3px;
+
+            /*
+            Colocando sombra:
+            1º edita na horizontal
+            2º edita na vertical
+            3º deixa mais ou menos transparente
+            4º aumenta ou diminui o tamanho da sombra
+            */
+            box-shadow: 6px 5px 2px 0px rgba(0, 0, 0, 0.322);
+        }
+
+        nav > a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 35px;
+        }
+
+        nav > a:hover{
+            color: rgb(233, 162, 229);
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            color: black;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 5px 4px 1px rgba(0, 0, 0, 0.226);
+
+            /* Adicionando arredondamento de vértice (é usado a mesma ideia da margem, podendo usar 4, 2 ou 1 configuração) */
+            border-radius: 15px 0px;
+        }
+
+        article{
+            background-color: rgb(223, 204, 241);
+            padding: 10px;
+        }
+
+        aside > p{
+            background-color: rgb(178, 143, 212);
+        }
+
+        footer{
+            background-color: rgb(50, 14, 85);
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        .titulo{
+            color: rgb(50, 14, 85);
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1 class="titulo">Meu site</h1>
+        <!-- Menu - Navegação -->
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção -->
+        <section id="noticias">
+            <article>
+                <h2 class="titulo">Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fugit ut eius ipsa quod nisi natus hic aliquid, obcaecati voluptatem tempore officiis! Doloribus ipsum aut minima est id dolorum quis.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pela Ynaiana</p>
+    </footer>
+</body>
+</html>

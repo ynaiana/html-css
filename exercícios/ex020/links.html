@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            /* Tirando o sublinhado do link */
+            text-decoration: none;
+
+            /* Para mudar a espessura da fonte */
+            font-weight: bold;
+        }
+
+        /* Pseudo-classe que altera a cor do link quando ele é visitado */
+        a:visited {
+            color: darkred;
+        }
+
+        /* Adicionando interação quando passa o mouse no link */
+        a:hover {
+            /* Mudando a cor do link */
+            color: black;
+            /* Colocando o sublinhado do link */
+            text-decoration: underline;
+        }
+
+        /* Adicionando interação quando clica no link */
+        a:active {
+            /* Mudando a cor do link */
+            color: coral;
+        }
+
+        a::after {
+            /* Escrevendo algo depois do link */
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+
+        .especial {
+            background-color: rgb(235, 196, 218);
+        }
+        /* Utilizando pseudo-elementos em uma classe */
+        .especial::before {
+            /* Escrevendo algo antes do link */
+            content: '[!!]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do CursoEmVideo</a></li>
+    </ul>
+</body>
+</html>

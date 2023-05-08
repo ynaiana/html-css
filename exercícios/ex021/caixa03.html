@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+        h1 {
+            /*
+            Repetir a borda fatiada
+            - O transparente serve para tirar a borda, caso o navegador não seja compatível -
+            */
+            border: 12px solid transparent;
+            padding: 10px;
+            border-image-source: url('borda.png');
+            /*Fatiar a borda*/
+            border-image-slice: 27;
+            /*Repetir a borda fatiada*/
+            border-image-repeat: repeat;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+</body>
+</html>
